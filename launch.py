@@ -84,7 +84,8 @@ def download_models():
         load_file_from_url(url=url, model_dir=path_loras, file_name=file_name)
     for file_name, url in vae_approx_filenames:
         load_file_from_url(url=url, model_dir=path_vae_approx, file_name=file_name)
-    for file_name, url in checkpoint_downloads.items():
+
+    
     load_file_from_url(
         url='https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_expansion.bin',
         model_dir=path_fooocus_expansion,
