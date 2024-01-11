@@ -267,6 +267,13 @@ lora_downloads = get_config_item_or_set_default(
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
 )
+lora_downloads = get_config_item_or_set_default(
+    key='lora_downloads',
+    default_value={
+        "GodPussy1 v4.safetensors": "https://civitai.com/api/download/models/99602"
+    },
+    validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
+)
 embeddings_downloads = get_config_item_or_set_default(
     key='embeddings_downloads',
     default_value={},
