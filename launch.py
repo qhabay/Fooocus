@@ -85,7 +85,11 @@ def download_models():
         model_dir=path_fooocus_expansion,
         file_name='pytorch_model.bin'
     )
-
+    load_file_from_url(
+        url='https://civitai.com/api/download/models/288982?type=Model&format=SafeTensor&size=full&fp=fp16',
+        model_dir=path_checkpoints,
+        file_name='Jaggernaut8'
+    )
     return
 
 
