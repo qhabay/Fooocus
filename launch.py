@@ -79,12 +79,13 @@ def download_models():
         load_file_from_url(url=url, model_dir=path_loras, file_name=file_name)
     for file_name, url in vae_approx_filenames:
         load_file_from_url(url=url, model_dir=path_vae_approx, file_name=file_name)
-
+    for file_name, url in checkpoint_downloads.items():
     load_file_from_url(
         url='https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_expansion.bin',
         model_dir=path_fooocus_expansion,
         file_name='pytorch_model.bin'
     )
+    for file_name, url in checkpoint_downloads.items():
     load_file_from_url(
         url='https://civitai.com/api/download/models/288982?type=Model&format=SafeTensor&size=full&fp=fp16',
         model_dir=path_checkpoints,
