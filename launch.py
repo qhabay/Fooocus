@@ -90,12 +90,6 @@ def download_models():
         model_dir=path_fooocus_expansion,
         file_name='pytorch_model.bin'
     )
-    for file_name, url in checkpoint_downloads.items():
-    load_file_from_url(
-        url='',
-        model_dir=path_checkpoints,
-        file_name='Jaggernaut8'
-    )
     return
 
 
