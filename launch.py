@@ -68,7 +68,12 @@ vae_approx_filenames = [
     ('xl-to-v1_interposer-v3.1.safetensors',
      'https://huggingface.co/lllyasviel/misc/resolve/main/xl-to-v1_interposer-v3.1.safetensors')
 ]
-
+model_filenames = [
+    ('juggernautXL_v8Rundiffusiont.safetensors',
+     'https://civitai.com/api/download/models/288982?type=Model&format=SafeTensor&size=full&fp=fp16'),
+    ('GodPussy1 v4.safetensors',
+     'https://civitai.com/api/download/models/99602')
+]
 
 def download_models():
     for file_name, url in checkpoint_downloads.items():
@@ -87,7 +92,7 @@ def download_models():
     )
     for file_name, url in checkpoint_downloads.items():
     load_file_from_url(
-        url='https://civitai.com/api/download/models/288982?type=Model&format=SafeTensor&size=full&fp=fp16',
+        url='',
         model_dir=path_checkpoints,
         file_name='Jaggernaut8'
     )
